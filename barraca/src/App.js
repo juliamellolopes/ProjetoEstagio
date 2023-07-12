@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoAddOutline } from 'react-icons/io5';
 import './App.css';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
           <div className="welcome">
             <h2 className="welcome-text">Cadastre sua primeira fruta</h2>
             <button className="welcome-button" onClick={() => setIsFirstTime(false)}>
-              Cadastrar Fruta
+              <IoAddOutline className="button-icon"/> Cadastrar Fruta
             </button>
           </div>
         ) : (

@@ -3,7 +3,7 @@
 .phone {
   width: 360px;
   height: 640px;
-  background-color: #fff;
+  background-color: #F0F4F7;
   border-radius: 20px;
   overflow: hidden;
   position: absolute;
@@ -15,33 +15,34 @@
 .screen {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #F0F4F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .welcome {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-top: 100px;
-  width: 328px;
-  /* height: 24px; */
-  top: 216px;
-  right: 16px;
+  align-items: flex-start;
 }
 
 .welcome-text {
-  styleName: 'S1';
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.15000000596046448px;
   text-align: left;
+  margin-bottom: 8px;
 }
 
 .welcome-button {
   width: 328px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 8px;
   padding: 8px 24px 8px 16px;
   border-radius: 100px;
@@ -50,4 +51,11 @@
   color: #fff;
   border: none;
   cursor: pointer;
+  font-family: Poppins;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
