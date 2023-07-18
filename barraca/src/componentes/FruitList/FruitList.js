@@ -1,10 +1,8 @@
 import React from 'react';
-import { FaDollarSign, FaCog } from 'react-icons/fa';
 
 function FruitList({ fruits }) {
   return (
     <div>
-      <h2>Listagem de Frutas</h2>
       {fruits.map((fruit) => (
         <div key={fruit.id} className="fruit-item">
           <div className="fruit-info">
@@ -16,10 +14,6 @@ function FruitList({ fruits }) {
           </div>
           <div className="fruit-options">
             <i className="fas fa-cog"></i>
-            <div className="options-menu">
-              <div className="option">Editar</div>
-              <div className="option">Excluir</div>
-            </div>
           </div>
         </div>
       ))}
